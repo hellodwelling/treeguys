@@ -1,99 +1,784 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProSite Under Construction</title>
-    <link rel="shortcut icon" type="image/png" href="https://landing-page-app-hero-images.s3.amazonaws.com/media/QFJ51LHGIIAYVO1EG0LIDKRW28UEXVMNC6U6XXTA.png"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+    <meta content="Tree Guys Pressure Washing &amp; Stump Grinding" property="og:title">
     
+        <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/NGUHEFRWQ6PS79GCD1KFETSDZYLVIWJFXWV0C2SP.png" property="og:image">
+        <meta content="Tree Guys Pressure Washing &amp; Stump Grinding" property="twitter:title">
+        <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/NGUHEFRWQ6PS79GCD1KFETSDZYLVIWJFXWV0C2SP.png" property="twitter:image">
+        <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/NGUHEFRWQ6PS79GCD1KFETSDZYLVIWJFXWV0C2SP.png" rel="shortcut icon" type="image/x-icon">
+        <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/NGUHEFRWQ6PS79GCD1KFETSDZYLVIWJFXWV0C2SP.png" rel="apple-touch-icon">     
+    
+    <title>
+         
+            Scottsboro, AL - The Best Softwashing, Pressurewashing and Stump Grinding | Tree Guys Pressure Washing &amp; Stump Grinding
+        
+    </title>
+    <meta name="description" content="Schedule your free quote today! Proudly serving 
+         
+            Scottsboro, AL & surrounding areas.
+         
+        Tree Guys Pressure Washing &amp; Stump Grinding provides commercial and residential soft washing, pressure washing, and stump grinding services in Scottsboro and surrounding areas. &lt;b&gt; …"
+    >
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4f07488cb7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+       
+     
+    
+    
+    <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/style.css" rel="stylesheet">
+    
+    <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.css" rel="stylesheet">
+    
+    <script src="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.js"></script> 
 </head>
-<body style="background-image: url(https://images.unsplash.com/photo-1533693706533-57740e69765d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2700&amp;q=80);>
 
-<!-- Section 1 -->
-<section class="relative w-full h-auto bg-cover" x-data="{ showMenu: false }" >
+<body>
 
-    <div class="absolute inset-0 z-0 h-full bg-purple-700 opacity-25"></div>
 
-    <!-- Desktop menu -->
-    <div class="flex items-center w-full h-20">
-        <nav class="hidden w-full md:block" x-show="!showMenu" x-cloak="">
-            <ul class="relative z-10 flex items-center px-6 text-sm text-white lg:text-base justify-between">
+
+<div class = "flex w-full flex-col">  
+    <div class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
+  <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
+    <div class="py-4 flex flex-row items-center justify-between">
+      
+        <a href= " #about "> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/NGUHEFRWQ6PS79GCD1KFETSDZYLVIWJFXWV0C2SP.png" alt="Tree Guys Pressure Washing &amp; Stump Grinding logo"> </a>
+      
+      <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:flex-row  lg:justify-end ">
+    
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#about">About Us
+</a>
+      
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#services">Our Services
+</a>
+     
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#our-work">Our Best Work
+</a>
+     
+           
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#testimonials">Testimonials &amp; Reviews
+</a>
+ 
+         
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#faqs">Faqs
+</a>
+     
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="#find-us">Service Areas
+</a>
+   
+    
+  
+
+
+    
+      <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline "x-data="{open: false}">
+      
+          <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
+            <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="first-name" id="0-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="last-name" id="0-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="phone-number" id="0-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <textarea name="message" cols="5" id="0-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+        </div>
+        <div class="block">
+        <button type="button" 
+         
+        onclick= "send_sms(0, 'Tree-Guys-Pressure-Washing--Stump-Grinding')" 
+        class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-400 text-white hover:bg-black hover:text-gray-400 rounded-lg">Send</button> 
+        </div>           
+
+    </form>
+</div>
+           
+      
+        
+    </nav>
+  </div>
+</div>
+    <section   
+class="flex relative flex-col w-full  bg-gray-900 text-white  lg:flex-row lg:flex-wrap sm:mx-auto pt-12 mt-12">
+    <div class="flex justify-end p-8 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
+        <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
+            <h2 class="mb-3 text-3xl text-center font-extrabold  leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
+                Tree Guys Pressure Washing &amp; Stump Grinding  
+            </h2>
             
-                <li class="mx-2 lg:mx-3">
-                    <a href="https://www.prophone.com/" class="text-center">
-                        <span class="text-3xl font-black leading-none text-white select-none logo text-center">ProSite</span> 
-                        <span class="text-pink-500 font-black logo text-center"> <br> by ProPhone </span>                     
-                    </a>
-                </li>
-                <div class = "flex flex-row">
-
-                <li class="mx-2 lg:mx-3">
-                    <a href="https://www.prophone.com/contact" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block font-medium text-gray-200 hover:text-white">
-                        <span class="block">Contact Us</span>
-                        <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
-                            <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-pink-500" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full"></span>
-                        </span>
-                    </a>
-                </li>
-                <li class="mx-2 lg:mx-3">
-                    <a href="https://www.prophone.com/blog" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block font-medium text-gray-200 hover:text-white">
-                        <span class="block">Blog</span>
-                        <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
-                            <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-pink-500" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full"></span>
-                        </span>
-                    </a>
-                </li>
-                </div>
-
-
-
-            </ul>
-        </nav>
-        <!-- End Desktop menu -->
-
-        <!-- Mobile Nav  -->
-        <nav class="fixed top-0 z-30 flex flex-col flex-wrap items-center justify-between w-full h-auto px-6 md:hidden">
-            <div class="relative z-30 flex items-center justify-between w-full h-20">
-                <a href="https://www.prophone.com" class="flex items-center flex-shrink-0 mr-6 text-white">
-                    <span class="text-3xl font-black leading-none text-white select-none logo">ProSite <br> <span class="text-xl text-pink-500">by ProPhone</span></span>
-                </a>
-                <div class="block lg:hidden">
-                    <button @click="showMenu = !showMenu" class="flex items-center justify-center w-10 h-10 text-gray-200 rounded-full hover:text-white hover:bg-white hover:bg-opacity-25 focus:outline-none">
-                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <title>Menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </nav>
-        <!-- End Mobile Nav -->
-    </div>
-
-    <!-- Mobile Menu -->
-    <div x-show.transition="showMenu" class="absolute top-0 z-20 flex flex-col items-center justify-center w-full h-full space-y-5 text-lg origin-center bg-pink-500" x-cloak="">
-        <a href="https://www.prophone.com/contact" class="block text-pink-200 hover:text-white">Contact</a>
-        <a href="https://www.prophone.com/blog" class="block text-pink-200 hover:text-white">Blog</a>
-    </div>
-    <!-- End Mobile Menu -->
-
-    <div class="container flex items-center justify-center h-auto py-32 mx-auto">
-
-        <div class="z-10 flex flex-col items-center px-8 xl:px-0">
-            <h1 class="mx-6 mt-1 text-xl text-5xl font-black text-center text-white lg:text-6xl sm:text-center sm:mx-0">This Site Is <br class="block lg:hidden">Under Construction!</h1>
-            <p class="w-2/3 my-6 text-xl font-normal text-center text-gray-200">It's going to be amazing as it was made with ProSite. <br> What's that?</p>
-            <div class="flex justify-center md:mt-3">
-                <a href="https://www.prophone.com/prosite" class="px-8 py-2 m-2 text-center text-white bg-pink-500 border-2 border-pink-500 rounded-full hover:bg-transparent">Check out ProSite</a>
+            <h1 class="pt-5 lg:text-xl text-center lg:text-left">
+                The best softwashing, pressurewashing and stump grinding in  Scottsboro & surrounding areas.  Anything you need, we have you covered. Clean, Professional Service - Every Time.
+            </h1>
+            
+            <h2 class="py-5 mb-5 lg:text-xl text-center lg:text-left">
+            </h2>
+            
+            <div class="flex flex-col lg:flex-row flex-grow flex-col space-y-5 md:space-y-0 w-full lg:w-auto md:space-y-5 lg:space-y-0">
+                <div class=" w-full lg:w-auto">
                 
+  
+                </div>
+
+                <div id="cover-button" class="w-full lg:w-auto ">
+                    
+ 
+    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+        
+<button 
+ id="" type="button" x-on:click.prevent="open = true" class=" 
+  w-full lg:w-auto 
+
+    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
+    <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
+</button>
+
+        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+        </div>
+        <div class="block">
+        <button type="button" 
+         
+        onclick= "send_sms(1, 'Tree-Guys-Pressure-Washing--Stump-Grinding')" 
+        class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-400 text-white hover:bg-black hover:text-gray-400 rounded-lg">Send</button> 
+        </div>           
+
+    </form>
+</div>
+    </div>
+ 
+                </div>
+
+                <div>
+                    
+ 
+    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+        
+<button 
+ id="side-button" type="button" x-on:click.prevent="open = true" class=" 
+  
+
+   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-gray-900">
+    <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
+</button>
+
+        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+        </div>
+        <div class="block">
+        <button type="button" 
+         
+        onclick= "send_sms(2, 'Tree-Guys-Pressure-Washing--Stump-Grinding')" 
+        class="w-full px-3 py-4 font-bold font-lg text-white  bg-gray-400 text-white hover:bg-black hover:text-gray-400 rounded-lg">Send</button> 
+        </div>           
+
+    </form>
+</div>
+    </div>
+
+                </div>
+
             </div>
         </div>
+    </div>
+    <div class="relative order-first lg:order-last block lg:w-1/2 ">
 
+    
+        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/73175LSEF4HQO1FQN6G63JQUD0WQIP2VSUWHGCKJ.jpeg"  alt = "Main hero image of Tree Guys Pressure Washing &amp; Stump Grinding performing Softwashing, Pressurewashing and Stump Grinding work"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+    
+    </div>
+
+
+        
+</section>
+    <section   id = "about" 
+class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  bg-white text-gray-900 ">
+        <div class="relative lg:w-1/2">
+        
+            
+                <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BSYCPOB0QGCYKSZTQ7R0MU2G2OOLA7T4INL49H0K.jpeg"   alt="About Us Image"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+            
+        
+           
+        </div>
+        <div class="py-5 lg:py-0 flex flex-col lg:py-32 lg:px-16 lg:w-1/2">
+            <div class="flex flex-col items-center lg:items-start w-full lg:max-w-lg">
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl">
+                    About Us
+                </h5>
+                <p class="py-5 px-5 lg:px-0 mb-5 text-center lg:text-left  lg:text-xl">
+                Tree Guys Pressure Washing & Stump Grinding provides commercial and residential soft washing, pressure washing, and stump grinding services in Scottsboro and surrounding areas. <br><br><b> We pride ourselves on providing professional customer care because making our customers happy is always our number one goal. </b><br><br>Send us a text or give us a ring, we specialize in soft washing exteriors and roofs but also pressure wash driveways, sidewalks, patios, and more. Whether it's cleaning gutters and rain spouts, or grinding a tree stump, we do it all!
+                </p>                
+            </div>
+
+            <div class = "flex flex-row flex-wrap text-center w-full lg:max-w-lg">
+                
+                
+                
+    <div 
+      
+    class="pb-30 mx-auto w-1/3   text-gray-400 " data-aos="fade-down" data-aos-delay="400" >
+        <span> <i class="fas fa-ambulance fa-2x "></i> </span>
+        <div class="mt-5 text-md font-bold uppercase ">
+            Emergency Services
+        </div>
+
+        
+        
+        <br>
+    </div>
+
+                
+                
+    <div 
+      
+    class="pb-30 mx-auto w-1/3   text-gray-400 " data-aos="fade-down" data-aos-delay="400" >
+        <span> <i class="fas fa-heart fa-2x "></i> </span>
+        <div class="mt-5 text-md font-bold uppercase ">
+            Family Owned
+        </div>
+
+        
+        
+        <br>
+    </div>
+
+                
+    <div 
+      
+    class="pb-30 mx-auto w-1/3   text-gray-400 " data-aos="fade-down" data-aos-delay="400" >
+        <span> <i class="fas fa-home fa-2x "></i> </span>
+        <div class="mt-5 text-md font-bold uppercase ">
+            Locally Owned
+        </div>
+
+        
+        
+        <br>
+    </div>
+
+                
+                
+            
+            </div>
+            
+                <div class = "mt-10 mb-0 flex flex-row justify-center lg:justify-start text-center w-full lg:max-w-lg">
+                
+                    <h2  class="mb-3 text-4xl justify-center lg:justify-start text-center lg:text-left text-gray-900 font-extrabold leading-none tracking-wide text-center">
+                        Connect with us on Social
+                    </h2>
+                
+                </div>
+                <div class = "flex flex-row mb-5 justify-center space-x-3 md:space-x-8 lg:space-x-12 lg:flex-nowrap mt-4   w-full lg:max-w-lg">
+                    
+    <a 
+    target="_blank" 
+    href = "https://www.facebook.com/Tree-guys-Pressure-washing-and-stump-grinding-104303848363833/?ref=page_internal"> 
+        <span 
+             
+            class = " text-gray-400 "> 
+            
+            <i class="fab fa-facebook fa-3x lg:fa-3x "></i>
+        </span> 
+    </a> 
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                                  
+     
+
+               </div>
+            
+            
+        </div>
+        
+        
+
+
+    </section>
+    
+    
+    
+    <section   id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-gray-900 border-0 border-gray-200 text-white border-solid ">
+        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24 ">
+            
+            <h2 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
+                Our Services
+            </h2>
+            <h2  class="w-full lg:pr-9 max-w-3xl mx-0 mx-auto mt-4 mb-0 font-sans text-sm font-medium leading-relaxed text-center text-gray-400 border-0 border-gray-200 lg:text-lg md:text-base">
+                What we are best at  - expert  softwashing, pressurewashing and stump grinding 
+                
+            </h2>
+
+            <div class="grid grid-cols-3 gap-5 mt-10 sm:grid-cols-8 lg:grid-cols-12">
+
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <h3  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Commercial & Residential Exterior Washing</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                A clean exterior pays off in the long run by protecting against harmful debris, algae and dirt build-up. We take care of turning your property back to new so you can get back to what matters.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <h3  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Gutter Clean Out</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                Rain gutter cleaning is not just a task. It can be hazardous and blocked gutters are more than undesirable– they can cause substantial water damage to your property. We take care of gutter clean outs to eliminate obstructions and debris.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <h3  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Driveway & Sidewalk Cleaning</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                A clean driveway and sidewalk set the impression for your home. We'll remove algae and dirt buildup and leave your driveway better looking than it ever before.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <h3  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Hardscape & Deck Cleaning</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                Decks, concrete structures, you name it, we'll leave them better than when they were originally made.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-gray-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div  class="md:mt-6 font-sans text-center border-0 border-gray-200 ">
+                            <h3  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-gray-400  ">Stump Removal & Grinding</h3>
+                            <p
+                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
+                                Stumps can be incredibly frustrating to deal with on a property. Let us bring our stump grinder over and take care of any size stump within a single afternoon.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+            
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden   bg-white text-gray-900   md:pt-20 xl:pt-20 xl:pb-20">
+        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+            <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
+            <h2 class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">See why our customers love us</h2>
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/UVV3JF14GCVAHRKHY2FHYVA1PHN6BAG9U6ALM5CX.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/UEFKF0GY5LRWMZKSN38LTAVTUG67UFUYX28UWR9T.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/KJI36PUC7G3HEGECKLXFXMKT2D54UJ9TXLHZZ19W.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/E1VGHREFS6MKRI1UVE9I3JB3ERHASTQWYLQZ10FW.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/SWHCVB0ODCW8I3TBDM7OWX9GMXZJJBOSIB9F8HLB.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/91L60RSIPG1RHS8B41FOD9POYJ003RUL8YRJPWIQ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/HZACZZAZ7T4FDX3DGW796AK5O163FEQKSTG87W78.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/C8XBGG8Z29GKMIUP9BTI77CCB0R610HTEIEF6SXS.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/UDP6OAWVJJD9WJGANCFQW657GCGH1UCKG7I9JN83.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/525LJ4Y1SAD3FSMOWT2WBGLW903LRGWMAFLVBZAW.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/UVV3JF14GCVAHRKHY2FHYVA1PHN6BAG9U6ALM5CX.jpeg"  alt = "Photo number 1 of Tree Guys Pressure Washing &amp; Stump Grinding&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/UEFKF0GY5LRWMZKSN38LTAVTUG67UFUYX28UWR9T.jpeg"  alt = "Photo number 2 of Tree Guys Pressure Washing &amp; Stump Grinding&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/KJI36PUC7G3HEGECKLXFXMKT2D54UJ9TXLHZZ19W.jpeg"  alt = "Photo number 3 of Tree Guys Pressure Washing &amp; Stump Grinding&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/E1VGHREFS6MKRI1UVE9I3JB3ERHASTQWYLQZ10FW.jpeg"  alt = "Photo number 4 of Tree Guys Pressure Washing &amp; Stump Grinding&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/SWHCVB0ODCW8I3TBDM7OWX9GMXZJJBOSIB9F8HLB.jpeg"  alt = "Photo number 5 of Tree Guys Pressure Washing &amp; Stump Grinding&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/91L60RSIPG1RHS8B41FOD9POYJ003RUL8YRJPWIQ.jpeg"  alt = "Photo number 6 of Tree Guys Pressure Washing &amp; Stump Grinding&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HZACZZAZ7T4FDX3DGW796AK5O163FEQKSTG87W78.jpeg"  alt = "Photo number 7 of Tree Guys Pressure Washing &amp; Stump Grinding&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/C8XBGG8Z29GKMIUP9BTI77CCB0R610HTEIEF6SXS.jpeg"  alt = "Photo number 8 of Tree Guys Pressure Washing &amp; Stump Grinding&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/UDP6OAWVJJD9WJGANCFQW657GCGH1UCKG7I9JN83.jpeg"  alt = "Photo number 9 of Tree Guys Pressure Washing &amp; Stump Grinding&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                              
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/525LJ4Y1SAD3FSMOWT2WBGLW903LRGWMAFLVBZAW.jpeg"  alt = "Photo number 10 of Tree Guys Pressure Washing &amp; Stump Grinding&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                 
+                                    
+        
+                <div class="z-50 fixed top-0 left-0 w-full h-full flex items-center justify-center" x-show.transition="open" >
+
+
+                
+                
+                    <div class="flex items-center justify-start w-12  ml-6 md:m-2 z-50 absolute bottom-1/4 md:bottom-0 transform translate-x-12 md:translate-x-32" >
+                    <button
+                    
+                            class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-gray-400"                                
+                            @click="open = false">
+                         <span class = "text-white"> <i class="fas fa-lg fa-times"></i> </span>
+                    </button>
+                    </div>
+
+                    <div class= "h-90 w-90 flex items-center justify-center overflow-hidden">
+
+                        <template  x-for="(slide, index, collection) in slides" :key="index">
+                            <div class="h-full w-full flex items-center justify-center absolute">
+                                <div class="absolute top-0 bottom-0 py-2  px-2 flex flex-col items-center justify-center"
+                                    x-show="activeSlide === index" 
+                                    x-transition:enter="transition ease-out duration-150"
+                                    x-transition:enter-start="opacity-0 transform scale-90"
+                                    x-transition:enter-end="opacity-100 transform scale-100"
+                                    x-transition:leave="transition ease-in duration-150"
+                                    x-transition:leave-start="opacity-100 transform scale-100"
+                                    x-transition:leave-end="opacity-0 transform scale-90">
+
+                                    <template x-if="slide[1] === 'photo' ">
+                                        <img :src="slide[0]" class="object-contain max-w-full max-h-full rounded shadow-lg" />
+                                    </template>
+                                    
+                                    <template x-if="slide[1] != 'photo'  ">
+                                        <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
+                                        </video>
+                                    </template> 
+                                    
+                                </div>
+                                <div  class="fixed text-gray-400 text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
+                                    x-show="activeSlide === index">
+                                    <span class="w-12 text-right" x-text="index + 1"></span>
+                                    <span class="w-4 text-center">/</span>
+                                    <span class="w-12 text-left" x-text="slides.length"></span>
+                                </div>
+                            </div>
+                        </template>
+
+                    <div class="fixed md:fixed z-50 absolute bottom-1/4 md:bottom-0 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center" @click.away="open = false">
+                        <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
+                        <button 
+                                type="button"
+                                
+                                class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-gray-400" 
+                               
+                                @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
+                                <span class = "text-white"> <i class="fas fa-lg fa-chevron-left"></i> </span>
+                           
+                        </button>
+                        </div>
+                        <div class="flex items-center justify-start w-12 md:ml-16">
+                        <button 
+                                type="button"
+                                
+                                class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center  bg-gray-400   "
+                               
+                                @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
+                           <span class = "text-white"> <i class="fas fa-lg fa-chevron-right"></i> </span>
+                        </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </div>     
+
+            
+</div>
+
+        
+    
+    
+    <div  id= "testimonials" class=" flex items-center justify-center  bg-gray-900 text-white  py-20 min-w-screen px-4">
+        <div class="px-16 ">
+            <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
+                <div class = "sm:mb-4 md:mb-0">
+                <h2  class="relative flex  text-gray-400 text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider uppercase lg:justify-center lg:items-center mb-10">Don&#x27;t just take our word for it</h2>
+                </div>
+
+
+                <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center ">
+                    
+                    Testimonials &amp; Reviews</h2>
+                <div class="block w-full h-1 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
+                
+                
+
+                <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-white  ">Carol Allen</h3>
+                            <h3 class=" text-white ">Scottsboro, AL  , Stump Removal &amp; Grinding  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"I had a maple tree in my yard that had been planted on my sons first Easter morning. After my son passed away at the age of 35, the tree was very special to me.  Then five years later the tree died too.<br>It was going to be hard for me to watch the maple tree get chopped down.  The Tree Guys understood my pain and came on their usual day off to cut it down while I was out of town.  I returned home to see the job site was not only finished, but so clean you would be hard pressed to know a tree had lived/died there.<br>Since then I have had three tree stumps removed, two other trees removed that the Tree Guys discovered to bed dead and my house powered washed.  All professionally done with friendly, attentive staff.<br>I highly recommend Tree Guys Pressure Washing and Stump Grinding Service."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+                </div>  
+                
+                <div class = "flex flex-col space-y-5 md:flex-row md:space-x-5 md:space-y-0 ">
+                
+                <a target= "_blank" href="https://www.facebook.com/Tree-guys-Pressure-washing-and-stump-grinding-104303848363833/reviews/?ref=page_internal"  class="w-full">
+                    <button   type="button" class="inline-flex w-full items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-gray-400  hover:bg-white hover:text-gray-900 ">
+                            <h5 class="text-2xl font-extrabold">Leave a Review</h5> 
+                    </button>
+                </a>
+                
+             
+                
+                <a target= "_blank" href="https://www.facebook.com/Tree-guys-Pressure-washing-and-stump-grinding-104303848363833/reviews/?ref=page_internal" class="w-full">
+                    <button  type="button" class="inline-flex w-full  items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-gray-400  hover:bg-white hover:text-gray-900 ">
+                            <h5 class="text-2xl font-extrabold">See More Reviews</h5> 
+                    </button>
+                </a>
+               
+            </div>
+
+                         
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+<section id= "faqs" class="py-16   bg-white text-gray-900  md:py-20 lg:py-24">
+    <div class="max-w-5xl px-12 mx-auto xl:px-0">
+
+        <h2  class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl">Faqs</h2>
+         <h2  class="my-3 mb-10  text-xl font-medium  text-gray-400 text-center">Your questions answered</h2>
+
+        <div class="relative mt-12 space-y-3">
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-gray-100 select-none">
+                <h3                 
+                @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-gray-900  cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-gray-400  lg:text-left">
+                    <span class = "flex text-left lg:text-left">What is the best way to get a quote?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p  class="px-2 pt-0 -mt-2  sm:text-lg py-7 text-gray-900 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>The best way to get in touch is to call or text us at (256) 609-9730. We provide personal attention to every customer.</p>
+            </div>
+
+        
+
+        </div>
     </div>
 </section>
 
-<!-- AlpineJS Library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+    
+
+<div id="service-area-array" class = "hidden">
+
+    
+        [[&#x27;Scottsboro&#x27;, &#x27;AL&#x27;, 50]]
+        <div class="city"> Scottsboro </div>
+        <div class="state"> AL </div>
+        <div class="radius"> 50 </div>
+    
+</div> 
+
+<section id="find-us" class="py-16   bg-white text-gray-900  md:py-20 lg:py-20">
+
+   
+   
+    <div class="max-w-5xl px-12 mx-auto text-center xl:px-0">
+   
+
+    <h2  class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Service Areas </h2>
+    <h2  class="my-3 mb-10  text-xl font-medium text-gray-400 text-center"> Proudly Serving   Scottsboro & Surrounding Areas   </h2>
+    <div style="height:500px; width:100%;" id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSw3qRocbSgfTrtxZbCsTjSHZaaJuUXF4&callback=initMap&libraries=&v=weekly"
+      async
+    ></script> 
+
+
+    
+    </div>
+</section>
+
+
+
+    <section  class="py-10 bg-gray-900">
+    
+        <div class="flex flex-col justify-around text-center md:flex-row">
+            <p class="order-last text-sm leading-tight text-gray-400 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
+             
+            <ul class="flex flex-row flex-wrap text-center justify-center pb-3 lg:-ml-4 lg:-mr-4 text-sm">
+                <li> <a  href="#about" class="px-2 md:px-4 text-gray-400 hover:text-white">About Us</a> </li>
+                
+                <li> <a  href="#services" class="px-2 md:px-4 text-gray-400 hover:text-white">Our Services</a> </li>
+                
+                
+                <li> <a  href="#our-work" class=" px-2 md:px-4 text-gray-400 hover:text-white">Our Best Work</a> </li>
+                
+                
+                <li> <a  href="#testimonials" class="px-2 md:px-4 text-gray-400 hover:text-white">Testimonials &amp; Reviews</a></li>
+                
+                
+                <li> <a  href="#faqs" class="px-2 md:px-4 text-gray-400 hover:text-white">Faqs</a></li>
+                
+                
+                
+                <li> <a  href="#find-us" class=" px-2 md:px-4 text-gray-400 hover:text-white">Service Areas</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</section>     
+</div> 
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+  
 
 </body>
 </html>
+
+
+
+
+
+
+
+
